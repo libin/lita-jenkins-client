@@ -27,7 +27,7 @@ class Lita::Handlers::JenkinsClient < Lita::Handler
 
     def all(res)
       res.reply api_exec {
-        client.job.list_all.inspect
+        client.job.list_all
       }
     end
 
